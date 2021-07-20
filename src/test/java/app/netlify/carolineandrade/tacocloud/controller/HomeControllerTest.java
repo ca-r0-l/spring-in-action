@@ -1,4 +1,4 @@
-package app.netlify.carolineandrade.tacocloud.http_rest;
+package app.netlify.carolineandrade.tacocloud.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

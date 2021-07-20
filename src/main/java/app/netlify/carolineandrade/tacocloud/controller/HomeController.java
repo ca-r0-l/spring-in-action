@@ -1,4 +1,4 @@
-package app.netlify.carolineandrade.tacocloud.http_rest;
+package app.netlify.carolineandrade.tacocloud.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
