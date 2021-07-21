@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import app.netlify.carolineandrade.tacocloud.model.Ingredient.Type;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Slf4j
@@ -43,6 +44,14 @@ public class DesignTacoController {
         });
         model.addAttribute("design", new Taco());
         return "design-a-taco";
+    }
+
+    @PostMapping
+    public String processDesign(Taco taco) {
+        // Save the taco taco...
+        // We'll do this in chapter 3
+        log.info("Processing design: " + taco);
+        return "redirect:/orders/current";
     }
 
     private List<Ingredient> filterByType(List<Ingredient> ingredients, Type type) {
